@@ -1,0 +1,68 @@
+/* 🌐 Social Links (Round Icon Format) */
+.social-links {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #1bffc2;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 👤 Circle Icon Style */
+.icon-circle {
+  width: 120px;
+  height: 120px;
+  background-color: transparent; /* ← changed from #15182e */
+  border: 3px solid #1bffc2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(27, 255, 194, 0.1);
+  position: relative;
+}
+
+
+.icon-circle i {
+  font-size: 2rem;
+  color: #1bffc2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* ✨ Hover Effects */
+.social-icon:hover .icon-circle {
+  background-color: #1bffc2;
+  border-color: #fff;
+  box-shadow: 0 0 20px rgba(27, 255, 194, 0.4);
+}
+
+.social-icon:hover .icon-circle i {
+  color: #111642;
+  transform: scale(1.2);
+}
+
+.social-icon:hover span {
+  color: #fff;
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 600px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

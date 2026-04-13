@@ -1,0 +1,95 @@
+/* 🌟 Fonts and Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0f2e;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-section {
+  background-color: #0a0f2e; /* 🔹 SAME as projects and body */
+  position: relative;
+  padding: 80px 20px 60px;
+  color: #ffffff; /* Optional: ensures text shows on dark background */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.skills-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 💡 Heading Styling */
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00988f, #2f6bbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🧩 Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* 💎 Card Styling */
+.skill-card {
+  background: #ffffff; /* Light background */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #000000; /* Set default text color to black */
+}
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.25);
+}
+.skill-card .icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.skill-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.6rem;
+  color: #1a1a1a; 
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+.animated-panel {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  min-height: 150px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  color: #eee;
+  transition: 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .animated-panel {
+    flex-direction: column;
+  }
+}

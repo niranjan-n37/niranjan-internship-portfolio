@@ -1,0 +1,419 @@
+#projects {
+  background-color: #0a0f2e;
+  padding: 80px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;              /* Make it a flex container */
+  justify-content: center;    /* Center content horizontally */
+}
+
+/* Base project card styles remain as is */
+
+/* Inventory Management card variant */
+.project-inventory {
+  background: linear-gradient(135deg, #1e2a78, #0a0f2e);
+  border: 2px solid #00e6e6;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 230, 230, 0.4);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.project-title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #00e6e6;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.project-inventory:hover {
+  box-shadow: 0 15px 50px rgba(0, 230, 230, 0.7);
+  border-color: #00fff7;
+}
+
+.project-inventory img {
+  height: 220px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  object-fit: contain;
+  background-color: #071238;
+  padding: 10px;
+}
+
+.project-inventory h3 {
+  color: #00e6e6;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.project-inventory p {
+  color: #a0f0f0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Netflix Clone card variant */
+.project-netflix {
+  background: #101426; /* keep your original dark background */
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-netflix img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.project-netflix h3 {
+  color: #e50914; /* Netflix red */
+  font-weight: 700;
+  font-size: 1.75rem;
+  letter-spacing: 0.3px;
+}
+
+.project-netflix p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.05rem;
+  padding: 0 5px;
+}
+
+.projects-container {
+  max-width: 1200px;
+  width: 100%;               /* Take full width but constrained by max-width */
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center content inside container */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  column-gap: 50px; /* Horizontal space between cards */
+  row-gap: 40px;    /* Vertical space between rows */
+  padding: 40px 0;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+
+.project-card {
+  background: #101426; /* Darker background for better white text contrast */
+  color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+.btn-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover .btn-icon {
+  transform: translateX(6px);
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 🏷️ Tech Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 20px;
+  justify-content: center;
+}
+
+.tech-tags span {
+  background-color: #00988f;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+.project-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #00e6e6; /* Bright contrasting cyan/teal */
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* 🔹 Project Description */
+.project-card p {
+  font-size: 1.05rem;
+  color: #ffffff; /* White text for better contrast */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.project-card .btn {
+  background-color: #00988f;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  align-self: center;  /* Changed from flex-start to center */
+  display: inline-block; /* Ensure proper button sizing */
+  cursor: pointer;
+}
+
+.project-card .btn:hover {
+  background-color: #007a7a;
+}
+
+
+.project-card .btn:hover {
+  background-color: #007a7a;
+}
+
+/* 🔄 Animation: fade-in on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive */
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+}.samples-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  direction: rtl; /* Scroll from right to left */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  position: relative;
+}
+
+.samples-scroll img {
+  width: 160px;   /* increased size */
+  height: 110px;  /* increased size */
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.samples-scroll img:hover {
+  transform: scale(1.1);
+}
+
+/* Scrollbar styling (optional) */
+.samples-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.samples-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.samples-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 152, 143, 0.6);
+  border-radius: 4px;
+}
+
+/* Arrow buttons container */
+.samples-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Left and right arrow buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00988f;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn:hover {
+  opacity: 1;
+}
+
+.scroll-btn.left {
+  right: 50px;  /* adjust spacing */
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
+/* 👇 Floating "Click to view" hint */
+/* 🔔 Popup Hint Message */.popup-message {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00988f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popup-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-message i {
+  margin-right: 6px;
+}
+
+/* ✨ Animation base style */
+.project-card {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  transition: all 0.7s ease-out;
+}
+
+/* ✅ When visible in viewport */
+.project-card.animate-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+/* 🔍 Image Viewer Modal */
+.image-viewer-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.image-viewer-modal.show {
+  display: flex;
+}
+
+.image-viewer-modal .modal-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+  animation: zoomIn 0.4s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.image-placeholder,
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

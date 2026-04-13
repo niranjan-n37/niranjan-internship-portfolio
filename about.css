@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: #11183b;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.navbar {
+  background-color: #0b0e2b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffc3;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.skills-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  color: #11183b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  background-color: #1f2a47;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill {
+  margin: 1rem 0;
+}
+
+.skill label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.bar {
+  background: #34416e;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.bar div {
+  background: #00ffc3;
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  color: black;
+  font-weight: bold;
+}

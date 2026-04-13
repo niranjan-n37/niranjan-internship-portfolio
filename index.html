@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niranjan | Portfolio</title>
+ 
+  <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="skills.css" />
+     <link rel="stylesheet" href="social.css" />
+     <link rel="stylesheet" href="social.css" />
+     <link rel="stylesheet" href="projects.css" /> <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header class="navbar">
+  <div class="container nav-container">
+    <h1 class="logo" style="font-size: 30px;">Niranjan</h1>
+    
+    <nav class="nav-menu">
+      <!-- Hamburger icon -->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <!-- Mobile & desktop nav menu (just ONE) -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li> 
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+    <a href="resume.pdf" download="Resume.pdf">
+      <i class="fas fa-download"></i> Resume
+    </a>
+  </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<script src="skills.js"></script>
+<script src="social.js"></script>
+<script src="script.js"></script>
+  <!-- 🔹 Hero Section with Finisher Header -->
+  <section class="hero" id="home">
+    <div class="finisher-header"></div>
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h1 style="font-family: Arial, sans-serif;">
+          Hi, I'm <span class="typewriter-name">Niranjan N</span>
+        </h1>
+        <h2>Software Developer | UI Designer</h2>
+        <p>
+          I design and build intuitive, accessible digital experiences that connect with users. 
+          I have strong problem-solving abilities, a solid foundation in database management, 
+          and experience leading teams to deliver efficient, user-centered solutions.
+        </p>
+        <a href="#skills" class="btn">View My Skills</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+      </div>
+      <div class="hero-image">
+        <img src="niraj_photo.jpeg" alt="Niranjan" />
+      </div>
+    </div>
+  </section>
+
+<section class="skills-section" id="skills">
+  <div class="container">
+    <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+
+    <div class="skills-grid">
+      <!-- Frontend Development -->
+      <div class="skill-card" onclick="toggleSkillCard(this, 'frontend')">
+        <div class="character-illustration">
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jtbfg2nb.json"
+            background="transparent" speed="1" loop autoplay style="width: 100%; height: 180px;">
+          </lottie-player>
+        </div>
+        <h3>Frontend Development</h3>
+        <p>React, HTML5, CSS3, JavaScript</p>
+        <div class="skill-details"></div>
+      </div>
+
+      <!-- Backend Development -->
+      <div class="skill-card" onclick="toggleSkillCard(this, 'backend')">
+        <div class="character-illustration">
+          <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_fup2uejx.json"
+            background="transparent" speed="1" loop autoplay style="width: 100%; height: 180px;">
+          </lottie-player>
+        </div>
+        <h3>Backend Development</h3>
+        <p>Java, SQL</p>
+        <div class="skill-details"></div>
+      </div>
+
+      <!-- UI/UX Design -->
+      <div class="skill-card" onclick="toggleSkillCard(this, 'uiux')">
+        <div class="character-illustration">
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_kkflmtur.json"
+            background="transparent" speed="1" loop autoplay style="width: 100%; height: 180px;">
+          </lottie-player>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>Figma, Canva</p>
+        <div class="skill-details"></div>
+      </div>
+
+      <!-- Creative Thinking -->
+
+  </div>
+</section>
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script src="skills.js"></script>
+<!-- 💼 Projects Section -->
+<section class="section" id="projects">
+  <div class="projects-container">
+     <h2 class="section-title">My Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Inventory Management -->
+      <div class="project-card">
+        <img src="inventory-img.png" alt="Inventory Management" />
+        <div class="project-content">
+          <h3 class="project-title">Inventory Management</h3>
+          <p class="project-desc">A full-stack inventory management system with real-time updates.</p>
+
+          <div class="samples-scroll">
+            <img src="inventory-img3.png" alt="Inventory Sample 1" />
+            <img src="inventory-img2.png" alt="Inventory Sample 2" />
+             <img src="inventory-img1 (2).png" alt="Inventory Sample 1" />
+          </div>
+
+          <a href="https://inventary-billing.vercel.app/" class="btn">
+            View Project <i class="fas fa-arrow-right btn-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2: Netflix Clone -->
+      <div class="project-card">
+        <div class="image-container">
+          <div class="image-placeholder loading-animation"></div>
+          <img src="netflix-image.jpg" alt="Netflix Clone" onload="this.previousElementSibling.style.display='none'" />
+        </div>
+
+        <div class="project-content">
+          <h3 class="project-title">Netflix Clone</h3>
+          <p class="project-desc">A responsive Netflix UI clone built with HTML CSS JS.</p>
+
+          <div class="samples-scroll">
+            <img src="netflix-img3.png" alt="Netflix Sample 3" />
+            <img src="netflix-img2.png" alt="Netflix Sample 2" />
+            <img src="netflix-img1.png" alt="Netflix Sample 1" />
+          </div>
+
+          <a href="https://github.com/niranjan-n37/Netflix-frontend-cloned" class="btn" target="_blank" rel="noopener">
+      View Code <i class="fas fa-arrow-right btn-icon"></i>
+    </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 🔍 Image Modal Viewer -->
+  <div class="image-viewer-modal" id="imageViewerModal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img class="modal-img" id="modalImg" src="" alt="Enlarged sample image" />
+  </div>
+
+  <script src="project.js"></script>
+
+  <!-- 📢 Popup Message -->
+  <div class="popup-message" id="popupMessage">
+    <p><i class="fas fa-mouse-pointer"></i> Click on images to view project samples</p>
+  </div>
+</section>
+
+
+
+
+  <section class="section" id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to drop me a message using the form below or connect via social media.</p>
+    <form id="contact-form" action="#" method="POST" novalidate>
+      <div class="form-group">
+        <label for="name">Name <span aria-hidden="true">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Your Name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message <span aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+   <div class="social-links" aria-label="Social Media Links">
+  <a href="https://linkedin.com/in/niranjan07" target="_blank" class="social-icon" aria-label="LinkedIn">
+    <div class="icon-circle"><i class="fab fa-linkedin-in"></i></div>
+    <span>LinkedIn</span>
+  </a>
+  <a href="https://github.com/niranjan-n37" target="_blank" class="social-icon" aria-label="GitHub">
+    <div class="icon-circle"><i class="fab fa-github"></i></div>
+    <span>GitHub</span>
+  </a>
+  <a href="mailto:niranjansakthivel.n@gmail.com" class="social-icon" aria-label="Email">
+    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+    <span>Email</span>
+  </a>
+</div>
+  </section>
+<script src="finisher-header.es5.min.js"></script>
+<script src="script.js"></script>
+<script src="about.js"></script>
+</body>
+</html>
